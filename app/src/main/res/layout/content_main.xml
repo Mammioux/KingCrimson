@@ -9,24 +9,28 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <Button
+    <ToggleButton
         android:id="@+id/button1"
-        android:layout_width="85dp"
-        android:layout_height="186dp"
-        android:background="#AAF0E2"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@mipmap/trang1"
         android:text="L"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
-    <Button
+    <ToggleButton
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/holo_orange_light"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@mipmap/trang3"
         android:text="R"
         app:layout_constraintBottom_toBottomOf="@+id/button1"
-        app:layout_constraintTop_toTopOf="@+id/button1"
-        tools:layout_editor_absoluteX="88dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toTopOf="@+id/button1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
